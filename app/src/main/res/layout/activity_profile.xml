@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile"
+    tools:context=".ProfileActivity">
+
+    <!-- Profile Picture and Name -->
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/person_yellow"
+        android:background="@drawable/yellow_border"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Anna Avetisyan"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <!-- EditText for user to input their name -->
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/profileName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/person_yellow"
+        android:hint="Enter Your Name"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="@drawable/yellow_border" />
+
+    <!-- EditText for user to input their birthday -->
+    <EditText
+        android:id="@+id/editBirthday"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/editName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/baseline_calendar_month_24"
+        android:hint="Enter Your Birthday"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="@drawable/yellow_border" />
+
+    <!-- EditText for user to input their phone number -->
+    <EditText
+        android:id="@+id/editPhoneNumber"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/editBirthday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/baseline_phone_24"
+        android:hint="Enter Your Phone Number"
+        android:inputType="phone"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="@drawable/yellow_border" />
+
+    <!-- EditText for user to input their email -->
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/editPhoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/email_yellow"
+        android:hint="Enter Your Email"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="@drawable/yellow_border" />
+
+    <!-- EditText for user to input their password -->
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/editEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/password_yellow"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="@drawable/yellow_border" />
+
+    <!-- Button to edit profile -->
+    <Button
+        android:id="@+id/buttonEditProfile"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/editPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Edit Profile"
+        android:textSize="20sp"
+        android:background="@drawable/white_background"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

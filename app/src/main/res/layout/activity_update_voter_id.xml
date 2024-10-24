@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/yellow_border">
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:background="@drawable/yellow_border"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/fathersNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Father's Name"
+            android:inputType="textPersonName"
+            android:background="@drawable/yellow_border"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/dobInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth"
+            android:inputType="date"
+            android:background="@drawable/yellow_border"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/sexInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sex"
+            android:inputType="text"
+            android:background="@drawable/yellow_border"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/addressProofInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Proof of Address (or upload)"
+            android:inputType="text"
+            android:background="@drawable/yellow_border"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/uploadAddressProofButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Proof of Address"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/yellow_border"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/ageProofInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Proof of Age (or upload)"
+            android:inputType="text"
+            android:background="@drawable/yellow_border"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/uploadAgeProofButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Proof of Age"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/yellow_border"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/identityProofInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Identity Proof (or upload)"
+            android:inputType="text"
+            android:background="@drawable/yellow_border"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/uploadIdentityProofButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Identity Proof"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/yellow_border"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/uploadPhotoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Photo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/yellow_border"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/yellow_border"
+            android:padding="8dp"/>
+    </LinearLayout>
+</ScrollView>
